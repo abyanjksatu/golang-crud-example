@@ -1,18 +1,24 @@
 # golang-crud-example
 
-## Get All Books
-```
-GET     "/api/books"
-```
+## Requirements
+* Install Golang
 
-## Get Single Book
-```
-GET     "/api/books/{id}"
-```
+## How to start the project
+1. Git Clone this project
+2. run: `go build`
+3. run: `./restapi.exe`
+4. it will run on `localhost:8000`
+5. try request below this
 
-## Create Book
+### Get All Books
+GET Method: `/api/books`
+
+### Get Single Book
+GET Method: `/api/books/{id}`
+
+### Create Book
+POST Method: `/api/books`
 ```
-POST    "/api/books"
 {
 	"isbn":"5000000",
 	"title":"Book Three",
@@ -24,9 +30,9 @@ POST    "/api/books"
 }
 ```
 
-## Update Book
+### Update Book
+PUT Method: `/api/books/{id}`
 ```
-PUT     "/api/books/{id}"
 {
     "isbn": "700000000",
     "title": "Book Two Updated",
@@ -37,7 +43,5 @@ PUT     "/api/books/{id}"
 }
 ```
 
-## Delete Book
-```
-DELETE  "/api/books/{id}"
-```
+### Delete Book
+DELETE Method: `/api/books/{id}`
