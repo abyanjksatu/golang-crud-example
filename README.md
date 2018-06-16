@@ -1,12 +1,17 @@
 # golang-crud-example
 
-//Get All Books
+## Get All Books
+```
 GET     "/api/books"
+```
 
-//Get Single Book
+## Get Single Book
+```
 GET     "/api/books/{id}"
+```
 
-//Create Book
+## Create Book
+```
 POST    "/api/books"
 {
 	"isbn":"5000000",
@@ -17,8 +22,10 @@ POST    "/api/books"
 		"lastname":"man"
 	}
 }
+```
 
-//Update Book
+## Update Book
+```
 PUT     "/api/books/{id}"
 {
     "isbn": "700000000",
@@ -28,6 +35,9 @@ PUT     "/api/books/{id}"
         "lastname": "Smitho"
     }
 }
+```
 
-//Delete Book
+## Delete Book
+```
 DELETE  "/api/books/{id}"
+```
